@@ -1,50 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title> ANACONDA | cdn.Videy.co/Vdghj3qe1.mp4</title> 
+  <title>LEOPARD | cdn.Videy.co/UlyJXvQZ.mp4</title> 
+  <meta name="description" content="AFTER PARTY' video here. Discover more calming and captivating video content on our site.">
+  <link rel="canonical" href="https://vdyceo678y.github.io/UlyJXvQZ.mp4/" /> 
   
-  <meta name="description" content="ANACONDA' video here. Discover more calming and captivating video content on our site.">
-  
-  <link rel="canonical" https://vdyceo678y.github.io/Vdghj3qe1.mp4/"> 
-  
-	<style>
+  <style>
     :root {
-      --color-primary: #f0f8ff; /* Alice Blue, background lebih lembut */
-      --color-secondary: #FF5C00; /* Biru cerah, untuk tombol */
-      --color-accent: #2c3e50; /* Abu-abu gelap, untuk teks */
-      --color-hover: #ffffff; /* Biru gelap, saat hover */
+      --color-secondary: #FF5C00;
+      --color-accent: #2c3e50;
       --color-shadow: rgba(0, 0, 0, 0.1);
     }
 
+    /* 🔥 Background gradient animasi */
     body {
-      background-color: var(--color-primary);
+      margin: 0;
+      padding: 1rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: var(--color-accent);
       text-align: center;
-      margin: 0;
-      padding: 1rem 1rem; 
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      justify-content: flex-start; 
-      align-items: center;
+
+      background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+      background-size: 800% 800%;
+      animation: bgAnimation 20s ease infinite;
     }
 
+    @keyframes bgAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Animasi fade-in */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Judul */
     h1 {
-      font-size: clamp(1rem, 5vw, 2rem);
-      margin-bottom: 1rem;
+      font-size: clamp(1.5rem, 5vw, 2.5rem);
+      margin: 0.5rem 0 1rem;
       color: var(--color-secondary);
       text-shadow: 1px 1px 2px var(--color-shadow);
-      margin-top: 0.5rem; 
-	  white-space: nowrap;
     }
 
+    /* Figure */
     figure {
-      margin: 0 0 0.5rem 0; /* Ubah 2rem menjadi 0.5rem */
+      margin: 0 0 0.5rem 0;
       max-width: 800px;
       width: 100%;
       background-color: #ffffff;
@@ -61,163 +80,151 @@
       border-radius: 8px;
     }
 
+    /* Container tombol */
     .button-container {
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       gap: 1rem;
-      margin-top: 0.5rem; 
+      margin-top: 0.5rem;
       width: 100%;
-      
+      max-width: 800px;
     }
 
-    a {
-      display: block;
+    /* Tombol Play (bulat) */
+    .btn-play {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #FF5C00, #FF8C42);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInBounce 1s ease forwards;
+      animation-delay: 1.2s;
+    }
+
+    .btn-play:hover {
+      transform: scale(1.15);
+      box-shadow: 0 8px 20px rgba(255, 92, 0, 0.5);
+    }
+
+    .btn-play:active {
+      transform: scale(0.95);
+    }
+
+    /* Tombol More Video (persegi panjang) */
+    .btn-more {
+      flex: 1;
       padding: 0.75rem 1.5rem;
-      background-color: var(--color-secondary);
-      color: #ffffff;
+      background: linear-gradient(135deg, #FF5C00, #FF8C42);
+      color: #fff;
       text-decoration: none;
       font-size: 1rem;
       font-weight: 600;
       border-radius: 8px;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      box-shadow: 0 4px 6px var(--color-shadow);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInBounce 1s ease forwards;
+      animation-delay: 1.5s;
     }
 
-    a:hover {
-      background-color: var(--color-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px var(--color-shadow);
+    .btn-more:hover {
+      background: linear-gradient(135deg, #FF8C42, #FF5C00);
+      transform: scale(1.08);
+      box-shadow: 0 8px 20px rgba(255,92,0,0.5);
     }
 
-    
-    @media (min-width: 768px) {
-      body {
-        padding: 2rem; 
-      }
-      h1 {
-        font-size: 2.5rem;
-      }
-      figure {
-         margin-bottom: 0.5rem; 
-      }
-      .button-container {
-        flex-direction: row;
-        gap: 1.5rem;
-        margin-top: 0.5rem; 
-        width: 100%;
-      }
-      a {
-        flex: 1;
-        font-size: 1.1rem;
-      }
+    .btn-more:active {
+      transform: scale(0.95);
     }
 
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.5rem;
-        margin-top: 0.5rem;
-      }
-      figure {
-        padding: 0.5rem;
-        margin-bottom: 0.5rem; 
-      }
-      a {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
-      }
-      .button-container {
-        margin-top: 0.5rem; 
-      }
+    /* Bounce effect muncul */
+    @keyframes fadeInBounce {
+      0% { opacity: 0; transform: translateY(40px) scale(0.95); }
+      60% { opacity: 1; transform: translateY(-10px) scale(1.05); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
     }
-    .hidden-css {
-      display: none !important; 
+
+    footer {
+      margin-top: auto;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
     }
   </style>
 </head>
- <script type='text/javascript' src='//pl25360387.profitableratecpm.com/dd/2b/42/dd2b42b09a77c8efe6fdff35fbfbc733.js'></script>
+<script type='text/javascript' src='//pl25360387.profitableratecpm.com/dd/2b/42/dd2b42b09a77c8efe6fdff35fbfbc733.js'></script>
 <body>
-	
-  <h1>ANACONDA</h1>
-  <figureitemscope itemtype="http://schema.org/VideoObject">
-    <img src="1.jpg" alt="ANACONDA"/>
-        <meta itemprop="uploadDate" content="2025-09-01" />
-		<meta itemprop="description" content="ANACONDA" />
-        <link itemprop="contentUrl" href="https://vdyceo678y.github.io/Vdghj3qe1.mp4/" />
+  <h1 class="fade-in" style="animation-delay:0.2s">LEOPARD</h1>
+
+  <figure class="fade-in" style="animation-delay:0.7s" itemscope itemtype="http://schema.org/VideoObject">
+    <img src="43.jpg" alt="LEOPARD"/>
+    <meta itemprop="uploadDate" content="2025-09-01" />
+    <meta itemprop="description" content="LEOPARD" />
+    <link itemprop="contentUrl" href="https://vdyceo678y.github.io/UlyJXvQZ.mp4/" />
   </figure>
+
   <div class="button-container">
-    <a href="https://vdyceo678y.github.io/Vdghj3qe1.mp4/" target="_blank">Watch Video</a>
-    <a href="https://creatorvideyco-mp4.github.io/movie.mp4/" target="_blank">More Video</a>
+    <a href="https://vdyceo678y.github.io/UlyJXvQZ.mp4/" target="_blank" class="btn-play">▶</a>
+    <a href="https://creatorvideyco-mp4.github.io/" target="_blank" class="btn-more">📺 More Video</a>
   </div>
+
+  <div style="height:100vh"></div>
+  <div class="reveal"><h2>ADVERTISEMENT</h2><p>PLEASE CLICK ON THIS AD ONCE TO BUY COFFEE SO THAT IT MAKES ME MORE EXCITED ABOUT CREATING CONTENT.</p></div>
+  <script type="text/javascript">
+	atOptions = {
+		'key' : '4a2fc598ebbbdbc95eb3bef73798c939',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/4a2fc598ebbbdbc95eb3bef73798c939/invoke.js"></script>
+
   <footer>
     <p>&copy; 2025 Videy.co. All rights reserved.</p>
-    <div id="secretMessage" class="hidden-css">This is a secret message, hidden by default.</div>
   </footer>
 
   <script>
-    
-    const secretMessage = document.getElementById('secretMessage');
-    if (secretMessage) { // Check if the element exists to prevent errors
-      secretMessage.classList.add('hidden-css');
-    }
+    // Scroll reveal
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("active");
+      });
+    }, { threshold: 0.2 });
+    reveals.forEach(el => observer.observe(el));
 
-    
-    document.addEventListener('contextmenu', function(e) {
-      e.preventDefault();
-      console.log('Right-click prevented.'); // Optional: for debugging
+    // 🚫 Proteksi klik kanan & shortcut inspect
+    document.addEventListener("contextmenu", e => e.preventDefault());
+    document.addEventListener("keydown", e => {
+      if (e.key === "F12") e.preventDefault();
+      if (e.ctrlKey && e.shiftKey && ["I","J","C"].includes(e.key.toUpperCase())) e.preventDefault();
+      if (e.ctrlKey && ["U","S"].includes(e.key.toUpperCase())) e.preventDefault();
     });
-
-    
-    document.addEventListener('keydown', function(e) {
-      const forbiddenKeys = ['F12'];
-      const forbiddenCtrlShiftKeys = ['I', 'J', 'C']; // I for Inspect, J for Console, C for Elements
-      const forbiddenCtrlKeys = ['U', 'S']; // U for View Source, S for Save
-
-      
-      if (forbiddenKeys.includes(e.key)) {
-        e.preventDefault();
-        console.log(`${e.key} key prevented.`);
-      }
-
-      
-      if (e.ctrlKey && e.shiftKey && forbiddenCtrlShiftKeys.includes(e.key.toUpperCase())) {
-        e.preventDefault();
-        console.log(`Ctrl+Shift+${e.key.toUpperCase()} prevented.`);
-      }
-
-      
-      if (e.ctrlKey && forbiddenCtrlKeys.includes(e.key.toUpperCase())) {
-        e.preventDefault();
-        console.log(`Ctrl+${e.key.toUpperCase()} prevented.`);
-      }
-    });
-
-    
-    (function() {
-      var devtools = /devtool/i;
-      var checkStatus = function() {
-        if (devtools.test(function() {}.toString())) {
-          // This part only executes if dev tools are open in some browsers
-          console.warn("Hey! Looks like you're peeking. ??");
-          console.warn("Our content is meant to be enjoyed directly!");
-          // You could also redirect, or overlay content, but that can be annoying for users.
-        }
-      };
-      
-    })();
- </script>
+  </script>
 </body>
-
 </html>
-
- <!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,4573229,4,0,0,0,00010000']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4573229&101" alt="" border="0"></a></noscript>
-<!-- Histats.com  END  -->
